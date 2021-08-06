@@ -1,12 +1,7 @@
 import { useAuth } from "../lib/auth";
+import DashboardShell from "@/components/DashboardShell";
+import SiteTableSkeleton from "@/components/SiteTableSkeleton";
 export default function Index() {
     const auth = useAuth();
-    return auth.user ? (
-        <div>
-            <p>Email: {auth.user.email}</p>
-            <button onClick={(e) => auth.signout()}>Sign Out</button>
-        </div>
-    ) : (
-        <button onClick={(e) => auth.signInWithGitHub()}>Sign In</button>
-    );
+    return <h1>hello</h1>;
 }

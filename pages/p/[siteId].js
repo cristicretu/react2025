@@ -68,7 +68,7 @@ const FeedbackPage = ({ initialFeedback }) => {
             margin="0 auto"
         >
             {auth.user && (
-                <Box as="form">
+                <Box as="form" onSubmit={onSubmit}>
                     <FormControl my={8}>
                         <FormLabel htmlFor="comment">Comment</FormLabel>
                         <Input
